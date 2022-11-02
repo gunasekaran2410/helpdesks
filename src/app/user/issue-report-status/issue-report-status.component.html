@@ -1,0 +1,326 @@
+<div class="help-div">
+
+  <div class="card">
+    <div class="card-header bg-info">
+      <div class="help_title">
+        Report Status
+      </div>
+    </div>
+    <div class="card-body">
+    <div class="row  ">
+     <div class="col-sm-4">
+      <div class="form-group">
+        <label for="label">Issue ID</label>
+        <input type="text" class="form-control">
+      </div>
+     </div>
+     <div class="col-sm-4">
+      <div class="form-group">
+        <label for="label">Issue Type</label>
+        <select class="form-select">
+          <option selected value="volvo">test</option>
+
+        </select>
+      </div>
+     </div>
+     <div class="col-sm-4">
+      <div class="form-group">
+        <label for="label">Status</label>
+        <select class="form-select">
+          <option selected value="volvo">test</option>
+
+        </select>
+      </div>
+     </div>
+    </div>
+
+    <div class="row  ">
+      <div class="col-sm-4">
+       <div class="form-group">
+         <label for="label">Issue Date</label>
+         <div class="input-group mb-3">
+          <input type="text"
+          class="form-control"
+          #dp="bsDatepicker"
+          [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY', showWeekNumbers:false }"
+          bsDatepicker
+          [bsValue]="bsValue">
+          <span class="input-group-text"
+           (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen">
+            <span class="material-icons">
+              calendar_month
+              </span>
+          </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-4">
+       <div class="form-group">
+         <label for="label">Dept.Concerned</label>
+         <select class="form-select">
+           <option selected value="volvo">test</option>
+
+         </select>
+       </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="label">Month</label>
+              <select class="form-select">
+                <option selected value="volvo">test</option>
+
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="label">Year</label>
+              <select class="form-select">
+                <option selected value="volvo">test</option>
+
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="row">
+      <div class="col-sm-12">
+        <ul class="list-inline pull-right padding  ">
+          <li class="list-inline-item m_r_25">
+          <button class="btn btn-success">
+            Filter</button>
+
+          </li>
+          <li class="list-inline-item">
+
+            <button class="btn btn-danger">
+              Clear</button>
+            </li>
+          </ul>
+
+      </div>
+     </div>
+
+     <hr>
+     <table class="table">
+      <thead class="bg-success">
+        <th>
+          Issue ID
+        </th>
+        <th>
+          Issue Date
+        </th>
+        <th>
+          Department
+        </th>
+        <th>
+          Issue Type
+        </th>
+        <th>
+          Issue Details
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          View
+        </th>
+        <th>
+          Fix
+        </th>
+        <th>
+          Reject
+        </th>
+        <th>
+          ReOpen
+        </th>
+        <th>
+          Hold
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ITID001</td>
+          <td>
+            04/10/2022 05:04 PM
+          </td>
+          <td>
+            Purchase
+          </td>
+          <td>
+            Network
+          </td>
+          <td>
+            ACCOUNTS LEDGAR
+          </td>
+          <td>
+            <div class="text-success">
+Completed
+            </div>
+          </td>
+          <td>
+            <span class="material-icons">
+              calendar_month
+              </span>
+          </td>
+          <td>
+            <span class="material-icons">
+              domain_verification
+              </span>
+          </td>
+          <td>
+            <span class="material-icons-outlined">
+              close
+              </span>
+          </td>
+          <td>
+
+          </td>
+          <td>
+            <span class="material-icons">
+              ads_click
+              </span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>ITID002</td>
+          <td>
+            05/10/2022 05:04 PM
+          </td>
+          <td>
+            Purchase
+          </td>
+          <td>
+            Network
+          </td>
+          <td>
+            ACCOUNTS LEDGAR
+          </td>
+          <td>
+            <div class="text-success">
+Completed
+            </div>
+          </td>
+          <td>
+            <span class="material-icons">
+              calendar_month
+              </span>
+          </td>
+          <td>
+            <span class="material-icons">
+              domain_verification
+              </span>
+          </td>
+          <td>
+            <span class="material-icons-outlined">
+              close
+              </span>
+          </td>
+          <td>
+
+          </td>
+          <td>
+            <span class="material-icons">
+              ads_click
+              </span>
+          </td>
+        </tr>
+        <tr>
+          <td>ITID002</td>
+          <td>
+            05/10/2022 05:04 PM
+          </td>
+          <td>
+            Purchase
+          </td>
+          <td>
+            Network
+          </td>
+          <td>
+            ACCOUNTS LEDGAR
+          </td>
+          <td>
+            <div class="text-success">
+Completed
+            </div>
+          </td>
+          <td>
+            <span class="material-icons">
+              calendar_month
+              </span>
+          </td>
+          <td>
+            <span class="material-icons">
+              domain_verification
+              </span>
+          </td>
+          <td>
+            <span class="material-icons-outlined">
+              close
+              </span>
+          </td>
+          <td>
+
+          </td>
+          <td>
+            <span class="material-icons">
+              ads_click
+              </span>
+          </td>
+        </tr>
+        <tr>
+          <td>ITID001</td>
+          <td>
+            04/10/2022 05:04 PM
+          </td>
+          <td>
+            Purchase
+          </td>
+          <td>
+            Network
+          </td>
+          <td>
+            ACCOUNTS LEDGAR
+          </td>
+          <td>
+            <div class="text-success">
+Completed
+            </div>
+          </td>
+          <td>
+            <span class="material-icons">
+              calendar_month
+              </span>
+          </td>
+          <td>
+            <span class="material-icons">
+              domain_verification
+              </span>
+          </td>
+          <td>
+            <span class="material-icons-outlined">
+              close
+              </span>
+          </td>
+          <td>
+
+          </td>
+          <td>
+            <span class="material-icons">
+              ads_click
+              </span>
+          </td>
+        </tr>
+
+      </tbody>
+     </table>
+
+    </div>
+  </div>
+
+</div>
