@@ -8,15 +8,20 @@ import { IssueReportStatusComponent } from './issue-report-status/issue-report-s
 import { HeaderComponent } from './UI/header/header.component';
 import { FooterComponent } from './UI/footer/footer.component';
 import { MaterialModule } from '../material/material.module';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 @NgModule({
   declarations: [
     UserComponent,
-
+    HeaderComponent,
+    IssueEntryComponent,
+    IssueReportStatusComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
+    BsDatepickerModule.forRoot(),
     MaterialModule,
     UserRoutingModule
   ]

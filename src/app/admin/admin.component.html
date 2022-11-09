@@ -1,0 +1,90 @@
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <li class="sidebar-brand text-center">
+              <a class="logo">
+              Helpdesk Admin
+              </a>
+          </li>
+          <li>
+              <a routerLink="/admin/dashboard" routerLinkActive="page_active">
+                <span class="material-icons">
+                  grid_view
+                  </span> <span>Dashboard</span></a>
+          </li>
+          <li>
+              <a routerLink="/admin/issue_category" routerLinkActive="page_active">
+                <span class="material-icons">
+                  category
+                  </span><span> Issue Category</span></a>
+          </li>
+          <li>
+              <a routerLink="/admin/item_master" routerLinkActive="page_active"><span class="material-icons">
+                widgets
+                </span><span>Item Master</span> </a>
+          </li>
+          <li>
+              <a routerLink="/admin/user_registrations" routerLinkActive="page_active">
+                <span class="material-icons">
+                  account_box
+                  </span> <span>User Registration</span> </a>
+          </li>
+
+      </ul>
+
+
+  </div>
+
+<mat-card>
+  <div class="row">
+    <div class="col-sm-1">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+
+    <button class="btn btn-light" type="button" id="menu-toggle" style="width: 50px;">
+      <span class="material-icons" style="    position: relative;
+      top: 4px;">
+        format_indent_decrease
+        </span>
+
+    </button>
+        </li>
+
+      </ul>
+    </div>
+    <div class="col-sm-11">
+      <ul class="list-inline" style="float: right; margin-bottom: 0;">
+        <li class="list-inline-item">
+          <mat-icon matBadge="15" class="matfile" matBadgeColor="warn">home</mat-icon>
+          <!-- Include text description of the icon's meaning for screen-readers -->
+          <span class="cdk-visually-hidden">
+            Example with a home icon with overlaid badge showing the number 15
+          </span>
+        </li>
+        <li class="list-inline-item">
+          <div class="img_p">
+<img src="https://cdn2.iconfinder.com/data/icons/avatars-60/5985/21-Hair_Stylist-256.png
+" alt="" width="40">          </div>
+        </li>
+        <li class="list-inline-item">
+          &nbsp; <a class="nav-link tes" routerLink="/login" tabindex="-1" aria-disabled="true">Jone Done</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</mat-card>
+
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+      <div class="container-fluid">
+         <router-outlet></router-outlet>
+      </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->

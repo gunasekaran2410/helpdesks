@@ -6,26 +6,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MaterialModule } from './material/material.module';
-import { IssueEntryComponent } from './user/issue-entry/issue-entry.component';
-import { IssueReportStatusComponent } from './user/issue-report-status/issue-report-status.component';
-import { FooterComponent } from './user/UI/footer/footer.component';
-import { HeaderComponent } from './user/UI/header/header.component';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    IssueEntryComponent,
-    IssueReportStatusComponent,
-    HeaderComponent,
-    FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    AdminModule,
     AppRoutingModule,
+    UserModule,
     MaterialModule,
-    BsDatepickerModule.forRoot(),
     BrowserAnimationsModule
   ],
   providers: [],
